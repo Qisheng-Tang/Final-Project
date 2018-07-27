@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXa-a6-mAV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Converter View Controller-->
+        <scene sceneID="YIA-4M-tRq">
+            <objects>
+                <viewController id="vXa-a6-mAV" customClass="ConverterViewController" customModule="Conversion_Calculator_UI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I6q-vk-isR"/>
+                        <viewControllerLayoutGuide type="bottom" id="8pa-Cl-O5I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RKc-Xk-7bD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D0E-sT-5Vu">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="G5I-vy-8GX">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztA-y0-kbG">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="91.5"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9fz-hI-u44">
+                                                        <rect key="frame" x="0.0" y="0.0" width="313" height="91.5"/>
+                                                        <color key="backgroundColor" red="0.77590517825478456" green="0.99394261837005615" blue="0.97223932868311602" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b8l-9q-Xwu">
+                                                        <rect key="frame" x="313" y="0.0" width="62" height="91.5"/>
+                                                        <color key="backgroundColor" red="0.77590517830000005" green="0.99394261839999998" blue="0.97223932869999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="62" id="5rn-y6-TcW"/>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SO1-qV-vNk">
+                                                <rect key="frame" x="0.0" y="92.5" width="375" height="92"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jk7-ce-Wbh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="313" height="92"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7l3-HR-FYr">
+                                                        <rect key="frame" x="313" y="0.0" width="62" height="92"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="62" id="utu-6e-aMc"/>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="IhM-wX-HyA">
+                                                <rect key="frame" x="0.0" y="185.5" width="375" height="91"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swD-ef-zm3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="91"/>
+                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                                        <state key="normal" title="C">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clear:" destination="vXa-a6-mAV" eventType="touchUpInside" id="RhO-Z3-URs"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nca-qD-2YR">
+                                                        <rect key="frame" x="125.5" y="0.0" width="124.5" height="91"/>
+                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                                        <state key="normal" title="+/-">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="posOrNeg:" destination="vXa-a6-mAV" eventType="touchUpInside" id="0kD-vQ-fdp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dor-Fs-jqb">
+                                                        <rect key="frame" x="251" y="0.0" width="124" height="91"/>
+                                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                                                        <state key="normal" title="Converter">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="convert:" destination="vXa-a6-mAV" eventType="touchUpInside" id="c88-q1-89B"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Dor-Fs-jqb" firstAttribute="width" secondItem="swD-ef-zm3" secondAttribute="width" id="O4S-6b-qZP"/>
+                                                    <constraint firstItem="Nca-qD-2YR" firstAttribute="width" secondItem="swD-ef-zm3" secondAttribute="width" id="iTd-zM-LGL"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="WVT-rI-kag">
+                                                <rect key="frame" x="0.0" y="277.5" width="375" height="92"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcl-Hr-8Th">
+                                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="92"/>
+                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                                        <state key="normal" title="7">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numbers:" destination="vXa-a6-mAV" eventType="touchUpInside" id="t4X-uU-aWg"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bX8-eZ-3ut">
+                                                        <rect key="frame" x="125.5" y="0.0" width="124.5" height="92"/>
+                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                                        <state key="normal" title="8">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numbers:" destination="vXa-a6-mAV" eventType="touchUpInside" id="0Ji-dA-u9K"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8a-qU-3nX">
+                                                        <rect key="frame" x="251" y="0.0" width="124" height="92"/>
+                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                                        <state key="normal" title="9">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numbers:" destination="vXa-a6-mAV" eventType="touchUpInside" id="N4Z-dp-UvV"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="V8a-qU-3nX" firstAttribute="width" secondItem="qcl-Hr-8Th" secondAttribute="width" id="Gaa-F5-blt"/>
+                                                    <constraint firstItem="bX8-eZ-3ut" firstAttribute="width" secondItem="qcl-Hr-8Th" secondAttribute="width" id="Jis-dW-Ij3"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="nKC-Fn-SNq">
+                                                <rect key="frame" x="0.0" y="370.5" width="375" height="91"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wer-xC-sTc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="91"/>
+                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                                        <state key="normal" title="4">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numbers:" destination="vXa-a6-mAV" eventType="touchUpInside" id="G0N-iB-m1N"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRn-pZ-LW7">
+                                                        <rect key="frame" x="125.5" y="0.0" width="124.5" height="91"/>
+                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                                        <state key="normal" title="5">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numbers:" destination="vXa-a6-mAV" eventType="touchUpInside" id="FcV-wM-Ur5"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9s-el-xHT">
+                                                        <rect key="frame" x="251" y="0.0" width="124" height="91"/>
+                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                                        <state key="normal" title="6">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numbers:" destination="vXa-a6-mAV" eventType="touchUpInside" id="QxY-hD-cx6"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="yRn-pZ-LW7" firstAttribute="width" secondItem="Wer-xC-sTc" secondAttribute="width" id="7BF-iG-Isx"/>
+                                                    <constraint firstItem="d9s-el-xHT" firstAttribute="width" secondItem="Wer-xC-sTc" secondAttribute="width" id="yoz-AE-l4l"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="HFb-wO-nAf">
+                                                <rect key="frame" x="0.0" y="462.5" width="375" height="92"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXY-0d-WJJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="92"/>
+                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                                        <state key="normal" title="1">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numbers:" destination="vXa-a6-mAV" eventType="touchUpInside" id="Vs4-KT-wLu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uK-Wa-tEs">
+                                                        <rect key="frame" x="125.5" y="0.0" width="124.5" height="92"/>
+                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                                        <state key="normal" title="2">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numbers:" destination="vXa-a6-mAV" eventType="touchUpInside" id="yrr-Vi-u4k"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yf4-FK-VvB">
+                                                        <rect key="frame" x="251" y="0.0" width="124" height="92"/>
+                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                                        <state key="normal" title="3">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numbers:" destination="vXa-a6-mAV" eventType="touchUpInside" id="k2y-MO-dsm"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="yf4-FK-VvB" firstAttribute="width" secondItem="IXY-0d-WJJ" secondAttribute="width" id="Aue-dO-B7E"/>
+                                                    <constraint firstItem="6uK-Wa-tEs" firstAttribute="width" secondItem="IXY-0d-WJJ" secondAttribute="width" id="log-h6-w2A"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="drf-7a-eFv">
+                                                <rect key="frame" x="0.0" y="555.5" width="375" height="91.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yI7-tD-hW3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="249.5" height="91.5"/>
+                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numbers:" destination="vXa-a6-mAV" eventType="touchUpInside" id="sDW-dY-WKn"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XS4-Dg-qvQ">
+                                                        <rect key="frame" x="250.5" y="0.0" width="124.5" height="91.5"/>
+                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                                        <state key="normal" title=".">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="dot:" destination="vXa-a6-mAV" eventType="touchUpInside" id="Otx-QK-of5"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="XS4-Dg-qvQ" firstAttribute="width" secondItem="yI7-tD-hW3" secondAttribute="width" multiplier="1/2" id="Lwj-qf-wUj"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="HFb-wO-nAf" firstAttribute="height" secondItem="ztA-y0-kbG" secondAttribute="height" id="DqQ-oN-JrF"/>
+                                            <constraint firstItem="nKC-Fn-SNq" firstAttribute="height" secondItem="ztA-y0-kbG" secondAttribute="height" id="JQi-UN-k0m"/>
+                                            <constraint firstItem="IhM-wX-HyA" firstAttribute="height" secondItem="ztA-y0-kbG" secondAttribute="height" id="ZS6-ah-6ey"/>
+                                            <constraint firstItem="SO1-qV-vNk" firstAttribute="height" secondItem="ztA-y0-kbG" secondAttribute="height" id="iIA-Pj-Kbp"/>
+                                            <constraint firstItem="drf-7a-eFv" firstAttribute="height" secondItem="ztA-y0-kbG" secondAttribute="height" id="lEE-zV-f3k"/>
+                                            <constraint firstItem="WVT-rI-kag" firstAttribute="height" secondItem="ztA-y0-kbG" secondAttribute="height" id="zIq-bs-CBD"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="G5I-vy-8GX" secondAttribute="bottom" id="36f-7E-4m3"/>
+                                    <constraint firstItem="G5I-vy-8GX" firstAttribute="leading" secondItem="D0E-sT-5Vu" secondAttribute="leading" id="9vH-9v-bJ3"/>
+                                    <constraint firstItem="G5I-vy-8GX" firstAttribute="top" secondItem="D0E-sT-5Vu" secondAttribute="top" id="DIQ-WX-HQ1"/>
+                                    <constraint firstAttribute="trailing" secondItem="G5I-vy-8GX" secondAttribute="trailing" id="EO6-e1-g7z"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D0E-sT-5Vu" firstAttribute="top" secondItem="I6q-vk-isR" secondAttribute="bottom" id="FYG-Yl-WLe"/>
+                            <constraint firstItem="8pa-Cl-O5I" firstAttribute="top" secondItem="D0E-sT-5Vu" secondAttribute="bottom" id="cwP-He-bfw"/>
+                            <constraint firstAttribute="trailing" secondItem="D0E-sT-5Vu" secondAttribute="trailing" id="el3-Fo-CXD"/>
+                            <constraint firstItem="D0E-sT-5Vu" firstAttribute="leading" secondItem="RKc-Xk-7bD" secondAttribute="leading" id="pXK-zv-scj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BlueDisplay" destination="9fz-hI-u44" id="il6-Pq-RfG"/>
+                        <outlet property="BlueInput" destination="b8l-9q-Xwu" id="Im1-Hg-viR"/>
+                        <outlet property="WhiteDisplay" destination="jk7-ce-Wbh" id="dIO-Mq-2n4"/>
+                        <outlet property="WhiteInput" destination="7l3-HR-FYr" id="shd-NU-Wkw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zxS-fe-unQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.8" y="105.69715142428787"/>
+        </scene>
+    </scenes>
+</document>
